@@ -1,0 +1,12 @@
+{% extends "_layout.html" %} {% block content %}
+<h1>Hello, world</h1>
+<h3>this is {{ username }}'s profile page</h3>
+
+{% if username == 'emilia' %}
+<img src="../static/images/GOT.jpg" alt="Emilia Clarke" />
+
+{% elif username == 'chris' %}
+<img src="../static/images/chris-hemsworth.jpg" alt="Chris Hemsworth" />
+
+{% endif %} {% endblock %}
+
